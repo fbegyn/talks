@@ -1,0 +1,396 @@
+2016-10-10 Zeus to thecy: GELD via bancontactapp
+    assets:be:zeus:tab       20.00 EUR
+    income:zeus:tab         -20.00 EUR
+
+2016-10-12 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-13 thecy to Zeus: 1 Cola
+    assets:be:zeus:tab       -0.70 EUR
+    expenses:voedsel          0.70 EUR
+
+2016-10-13 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-14 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-14 thecy to Zeus: 1 Cola and 1 XL paprika
+    assets:be:zeus:tab       -2.35 EUR
+    expenses:voedsel          2.35 EUR
+
+2016-10-18 thecy to Zeus: Chinees 18/10
+    assets:be:zeus:tab       -6.00 EUR
+    expenses:voedsel          6.00 EUR
+
+2016-10-18 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-18 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-18 Zeus to thecy: GELD bancontact
+    assets:be:zeus:tab       30.00 EUR
+    income:zeus:tab         -30.00 EUR
+
+2016-10-19 thecy to basho: Desparados
+    assets:be:zeus:tab       -2.04 EUR
+    expenses:voedsel          2.04 EUR
+
+2016-10-19 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2016-10-20 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-20 thecy to Zeus: 1 Paprika XL
+    assets:be:zeus:tab       -1.60 EUR
+    expenses:voedsel          1.60 EUR
+
+2016-10-24 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-24 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-24 thecy to don: Fritoloog 24/10/2016
+    assets:be:zeus:tab       -8.90 EUR
+    expenses:voedsel          8.90 EUR
+
+2016-10-26 thecy to Zeus: 1 Sprite
+    assets:be:zeus:tab       -0.70 EUR
+    expenses:voedsel          0.70 EUR
+
+2016-10-26 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2016-10-26 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-26 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-10-26 thecy to Zeus: 1 M&M
+    assets:be:zeus:tab       -0.65 EUR
+    expenses:voedsel          0.65 EUR
+
+2016-10-27 thecy to Zeus: 1 Ice Tea and 1 Oven roasted paprika
+    assets:be:zeus:tab       -1.95 EUR
+    expenses:voedsel          1.95 EUR
+
+2016-11-08 thecy to Zeus: 1 Ice Tea and 1 Super chips salt 'n pepper
+    assets:be:zeus:tab       -2.40 EUR
+    expenses:voedsel          2.40 EUR
+
+2016-11-08 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-11-08 thecy to Zeus: 1 Twix
+    assets:be:zeus:tab       -0.40 EUR
+    expenses:voedsel          0.40 EUR
+
+2016-11-09 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2016-11-09 thecy to Zeus: 1 Ice Tea and 1 Twix
+    assets:be:zeus:tab       -1.15 EUR
+    expenses:voedsel          1.15 EUR
+
+2016-11-10 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-02-17 thecy to destro: Uniq
+    assets:be:zeus:tab       -5.00 EUR
+    expenses:voedsel          5.00 EUR
+
+2017-02-20 Zeus to thecy: Overschrijving gedaan
+    assets:be:zeus:tab       50.00 EUR
+    income:zeus:tab         -50.00 EUR
+
+2017-02-20 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-02-20 thecy to don: pizza
+    assets:be:zeus:tab       -8.00 EUR
+    expenses:voedsel          8.00 EUR
+
+2017-02-21 thecy to Zeus: 1 Ice Tea and 1 Mikado Melk
+    assets:be:zeus:tab       -2.30 EUR
+    expenses:voedsel          2.30 EUR
+
+2017-02-21 thecy to benji: fritoloog foodsies
+    assets:be:zeus:tab       -7.30 EUR
+    expenses:voedsel          7.30 EUR
+
+2017-02-21 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-02 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-02 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2017-03-02 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-02 thecy to elo: foodsies
+    assets:be:zeus:tab       -7.42 EUR
+    expenses:voedsel          7.42 EUR
+
+2017-03-02 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-03 thecy to Zeus: 1 Cola
+    assets:be:zeus:tab       -0.70 EUR
+    expenses:voedsel          0.70 EUR
+
+2017-03-03 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-03 thecy to Zeus: 1 Paprika chips
+    assets:be:zeus:tab       -0.60 EUR
+    expenses:voedsel          0.60 EUR
+
+2017-03-06 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-06 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-06 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-07 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-07 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2017-03-08 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-08 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2017-03-08 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-09 thecy to Zeus: 1 M&M
+    assets:be:zeus:tab       -0.65 EUR
+    expenses:voedsel          0.65 EUR
+
+2017-03-13 thecy to Zeus: 1 Ice Tea and 1 Mikado Melk
+    assets:be:zeus:tab       -2.30 EUR
+    expenses:voedsel          2.30 EUR
+
+2017-03-13 iasoon to thecy: Frietjes!
+    assets:be:zeus:tab        5.00 EUR
+    income:zeus:tab          -5.00 EUR
+
+2017-03-13 benji to thecy: Frietjes
+    assets:be:zeus:tab        8.00 EUR
+    income:zeus:tab          -8.00 EUR
+
+2017-03-13 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-13 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-13 davit to thecy: Frietn
+    assets:be:zeus:tab        7.00 EUR
+    income:zeus:tab          -7.00 EUR
+
+2017-03-16 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-16 thecy to Zeus: 1 Ice Tea and 1 Mikado Melk
+    assets:be:zeus:tab       -2.30 EUR
+    expenses:voedsel          2.30 EUR
+
+2017-03-16 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-16 rienspy to thecy: frietjes
+    assets:be:zeus:tab        6.30 EUR
+    income:zeus:tab          -6.30 EUR
+
+2017-03-16 thecy to basho: sjineeeze 14/3
+    assets:be:zeus:tab       -6.00 EUR
+    expenses:voedsel          6.00 EUR
+
+2017-03-20 thecy to Zeus: 2 Ice Teas and 1 M&M
+    assets:be:zeus:tab       -2.15 EUR
+    expenses:voedsel          2.15 EUR
+
+2017-03-21 rienspy to thecy: alstu
+    assets:be:zeus:tab        4.00 EUR
+    income:zeus:tab          -4.00 EUR
+
+2017-03-21 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-21 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-27 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-27 rienspy to thecy: friet
+    assets:be:zeus:tab        6.10 EUR
+    income:zeus:tab          -6.10 EUR
+
+2017-03-27 benji to thecy: Fritoloog
+    assets:be:zeus:tab        8.50 EUR
+    income:zeus:tab          -8.50 EUR
+
+2017-03-27 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-29 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-29 Zeus to thecy: bancontactapp
+    assets:be:zeus:tab       40.00 EUR
+    income:zeus:tab         -40.00 EUR
+
+2017-03-29 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-29 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2017-03-30 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-03-31 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-04-19 thecy to Zeus: 1 Ice Tea and 1 Mikado puur
+    assets:be:zeus:tab       -2.30 EUR
+    expenses:voedsel          2.30 EUR
+
+2017-04-19 thecy to Zeus: pull
+    assets:be:zeus:tab      -40.00 EUR
+    expenses:voedsel         40.00 EUR
+
+2017-05-02 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-02 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2017-05-02 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-03 thecy to Zeus: 1 Ice Tea and 1 Prince koeken (delhaize merk)
+    assets:be:zeus:tab       -1.75 EUR
+    expenses:voedsel          1.75 EUR
+
+2017-05-03 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-03 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-04 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-04 thecy to Zeus: 1 Ice Tea and 1 M&M
+    assets:be:zeus:tab       -1.40 EUR
+    expenses:voedsel          1.40 EUR
+
+2017-05-04 thecy to Zeus: 1 Mikado Melk
+    assets:be:zeus:tab       -1.55 EUR
+    expenses:voedsel          1.55 EUR
+
+2017-05-05 thecy to caroline: Pizzas
+    assets:be:zeus:tab       -8.69 EUR
+    expenses:voedsel          8.69 EUR
+
+2017-05-05 thecy to Zeus: 2 Ice Teas and 1 Mikado Melk
+    assets:be:zeus:tab       -3.05 EUR
+    expenses:voedsel          3.05 EUR
+
+2017-05-05 thecy to basho: comfort chinees
+    assets:be:zeus:tab       -4.25 EUR
+    expenses:voedsel          4.25 EUR
+
+2017-05-05 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-05 thecy to Zeus: 1 Ice Tea
+    assets:be:zeus:tab       -0.75 EUR
+    expenses:voedsel          0.75 EUR
+
+2017-05-08 thecy to Zeus: 1 Ice Tea and 1 M&M
+    assets:be:zeus:tab       -1.40 EUR
+    expenses:voedsel          1.40 EUR
+
+2017-05-08 Zeus to thecy: overschrijving
+    assets:be:zeus:tab       30.00 EUR
+    income:zeus:tab         -30.00 EUR
+
+2017-05-10 thecy to Zeus: 1 Ice Tea, 1 Kinder bueno, and 1 Oven roasted paprika
+    assets:be:zeus:tab       -2.85 EUR
+    expenses:voedsel          2.85 EUR
+
+2017-05-10 thecy to iepoev: foods
+    assets:be:zeus:tab       -4.50 EUR
+    expenses:voedsel          4.50 EUR
+
+2017-05-12 thecy to Zeus: 1 Ice Tea and 1 Oven roasted paprika
+    assets:be:zeus:tab       -2.25 EUR
+    expenses:voedsel          2.25 EUR
+

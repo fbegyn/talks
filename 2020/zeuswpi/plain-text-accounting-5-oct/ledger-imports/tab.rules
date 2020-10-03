@@ -1,0 +1,16 @@
+skip 1
+fields am, creditor, debitor,,, msg, date
+
+date-format %FT%T.000%Ez
+
+account1 assets:be:zeus:tab
+account2 expenses:voedsel
+
+description %debitor to %creditor: %msg
+amount1 -%am EUR
+amount2 %am EUR
+
+if %creditor thecy
+	amount1 %am EUR
+	account2 income:zeus:tab
+	amount2 -%am EUR
