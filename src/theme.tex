@@ -1,0 +1,43 @@
+\usetheme[numbering=fraction]{metropolis}
+\usepackage{montserrat}
+\usepackage{tikz}
+\usepackage[default]{lato}
+\definecolor{fbegyn}{RGB}{186,102,0} 
+\definecolor{fbegynlight}{RGB}{236,152,50} 
+\setbeamercolor{progress bar}{fg=fbegyn, bg=fbegynlight}
+\setbeamercolor{alerted text}{fg=fbegyn,}
+\setbeamercolor{title separator}{fg=fbegyn}
+\setbeamercolor{progress bar in section page}{fg=fbegyn,bg=fbegynlight}
+\setbeamercolor{frametitle}{fg=white, bg=fbegyn}
+\setbeamercolor{frametitle}{fg=white, bg=fbegyn}
+\setbeamercolor{palette primary}{fg=white, bg=fbegyn}
+\setbeamercolor{page number in head/foot}{fg=fbegyn}
+\institute{\large\color{fbegyn}}
+
+\setbeamertemplate{frame numbering}{
+    \ifbool{metropolis@standout}{\color{white}}{\color{fbegyn} \insertframenumber}
+}
+
+\makeatletter
+\renewcommand{\metropolis@enablesectionpage}{
+    \AtBeginSection{
+        \ifbeamer@inframe
+        \sectionpage
+        \else
+        \frame[c]{\sectionpage}
+        \fi
+    }
+}
+\metropolis@enablesectionpage
+
+\makeatother
+
+\setbeamertemplate{frame footer}{
+    \ifbool{metropolis@standout}{\color{white}}{\color{fbegyn}}}
+
+
+\newcommand{\fbegyn}{{\fontfamily{Montserrat-LF}\selectfont\fontseries{black}\selectfont fbegyn}}
+
+\makeatletter
+\beamer@ignorenonframefalse
+\makeatother
