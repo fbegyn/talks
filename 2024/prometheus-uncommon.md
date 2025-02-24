@@ -1,25 +1,27 @@
 ---
 title: Prometheus (Un)common Knowledge
 author: Francis Begyn
-date: \today
+date: 2024-09-24
 aspectratio: "169"
+draft: false
+---
+
+# Prometheus uncommon knowledge
 
 ---
 
-# Intro
+## Intro
 
 - Prometheus
 - PromQL (Prometheus Query Language)
 
 ---
 
-# {.standout}
-
-Prometheus
+## Prometheus
 
 ---
 
-# Prometheus
+## Prometheus
 
 - Created in 2012 at SoundCloud
 - Open-sourced in 2015
@@ -27,7 +29,7 @@ Prometheus
 
 ---
 
-# Prometheus
+## Prometheus
 
 - Pull-based model
 - Highly performant storage engine (on UNIX-compliant filesystems)
@@ -35,7 +37,7 @@ Prometheus
 
 ---
 
-# Prometheus
+## Prometheus
 
 - Pull-based model
 - Highly performant storage engine (on UNIX-compliant filesystems)
@@ -45,31 +47,27 @@ Prometheus
 
 ---
 
-# {.standout}
-
 Prometheus Components
 
 ---
 
-# Prometheus Components
+## Prometheus Components
 
-![Component Overview](./2024/images/prom-uncommon-knowledge/prometheus_overall_architecture.svg)
+![Component Overview](/static/img/talks/2024/prometheus_overall_architecture.svg) <!-- .element height="550px" -->
 
 ---
-
-# {.standout}
 
 Prometheus
 
 ---
 
-# Prometheus and service discovery
+## Prometheus and service discovery
 
-![Prometheus SD](./2024/images/prom-uncommon-knowledge/prometheus_service_discovery_focus.svg)
+![Prometheus SD](/static/img/talks/2024/prometheus_service_discovery_focus.svg) <!-- .element height="450px" -->
 
 ---
 
-# Service Discovery
+## Service Discovery
 
 - Created to handle dynamic environments
   - Containers
@@ -78,7 +76,7 @@ Prometheus
 
 ---
 
-# Prometheus Targets and Service Discovery
+## Prometheus Targets and Service Discovery
 
 ```
 - job_name: node-exporter
@@ -92,7 +90,7 @@ Prometheus
 
 ---
 
-# Labels ... ? What Are Labels?
+## Labels ... ? What Are Labels?
 
 > Use labels to differentiate the characteristics of what is being measured
 
@@ -101,13 +99,13 @@ Prometheus
 
 ---
 
-# Labels ... ? What Are Labels?
+## Labels ... ? What Are Labels?
 
-![promtheus relabel](./2024/images/prom-uncommon-knowledge/prometheus_relabel_flow.svg)
+![promtheus relabel](/static/img/talks/2024/prometheus_relabel_flow.svg)  <!-- .element height="550px" -->
 
 ---
 
-# Reserved Labels
+## Reserved Labels
 
 - Allows dynamic changes to several scrape settings
 
@@ -119,68 +117,62 @@ Prometheus
 
 ---
 
-# Relabeler Webapp
+## Relabeler Webapp
 
-![Relabeler QR](./2024/images/prom-uncommon-knowledge/relaber-site.png)
+![Relabeler QR](/static/img/talks/2024/relaber-site.png)  <!-- .element height="550px" -->
 
 ---
-
-# {.standout}
 
 Prometheus Exporters
 
 ---
 
-# Prometheus Exporters
+## Prometheus Exporters
 
 - Two types of exporters:
   1. Exporters that expose data of their own
   2. Exporters that expose data they collect from other targets
 
-![Prometheus Exporter](./2024/images/prom-uncommon-knowledge/prometheus_exporter_focus.svg)
+![Prometheus Exporter](/static/img/talks/2024/prometheus_exporter_focus.svg)  <!-- .element height="475px" -->
 
 ---
 
-# Prometheus Exporters
+## Prometheus Exporters
 
 - Collect data
 - Expose collected data in Prometheus format
 
 ```
-# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
-# TYPE go_gc_duration_seconds summary
+## HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+## TYPE go_gc_duration_seconds summary
 go_gc_duration_seconds{quantile="0"} 0.000138442
 go_gc_duration_seconds{quantile="0.25"} 0.00022757
 go_gc_duration_seconds_count 56699
-# HELP go_goroutines Number of goroutines that currently exist.
-# TYPE go_goroutines gauge
+## HELP go_goroutines Number of goroutines that currently exist.
+## TYPE go_goroutines gauge
 go_goroutines 14333
-# HELP go_info Information about the Go environment.
-# TYPE go_info gauge
+## HELP go_info Information about the Go environment.
+## TYPE go_info gauge
 go_info{version="go1.20.5"} 1
 ```
 
 ---
 
-# {.standout}
-
 Prometheus Remote Write
 
 ---
 
-# Prometheus Remote Write
+## Prometheus Remote Write
 
-![Prometheus Remote Write](./2024/images/prom-uncommon-knowledge/prometheus_remote_focus.svg)
+![Prometheus Remote Write](/static/img/talks/2024/prometheus_remote_focus.svg) <!-- .element height="600px" -->
 
 ---
-
-# {.standout}
 
 PromQL
 
 ---
 
-# PromQL
+## PromQL
 
 - Prometheus Query Language
 - Functions, aggregators, selectors
@@ -190,35 +182,35 @@ PromQL
 
 ---
 
-# Querying
+## Querying
 
-![Query Docs](./2024/images/prom-uncommon-knowledge/docs-query.png)
-
----
-
-# PromQL
-
-![PromQL Instant Query](./2024/images/prom-uncommon-knowledge/series_baseline.svg)
+![Query Docs](/static/img/talks/2024/docs-query.png) <!-- .element height="550px" -->
 
 ---
 
-# Instant Query
+## PromQL
+
+![PromQL Instant Query](/static/img/talks/2024/series_baseline.svg) <!-- .element height="550px" -->
+
+---
+
+## Instant Query
 
 Instant query `node_cpu_seconds`
 
-![PromQL Instant Query](./2024/images/prom-uncommon-knowledge/series_instant_basics.svg)
+![PromQL Instant Query](/static/img/talks/2024/series_instant_basics.svg) <!-- .element height="550px" -->
 
 ---
 
-# Range Query
+## Range Query
 
 Range query `node_cpu_seconds[10m]`
 
-![PromQL Range Query](./2024/images/prom-uncommon-knowledge/series_range_query.svg)
+![PromQL Range Query](/static/img/talks/2024/series_range_query.svg) <!-- .element height="550px" -->
 
 ---
 
-# Functions
+## Functions
 
 - Many functions like `avg, max, floor, ceil, round, rate, ...`
 - This is generally where you see the trade-off between accuracy and reliability
@@ -226,13 +218,11 @@ Range query `node_cpu_seconds[10m]`
 
 ---
 
-# {.standout}
-
 Prometheus tooling
 
 ---
 
-# promtool
+## promtool
 
 - `promtool`: CLI interface for all things Prometheus
 - allows for querying running Prometheus API
@@ -243,7 +233,7 @@ Prometheus tooling
 
 ---
 
-# amtool
+## amtool
 
 - `amtool`: CLI interface for all things alertmanager
 - allows for querying running Alertmanager API
@@ -252,9 +242,9 @@ Prometheus tooling
 
 ---
 
-# Promlabs guide
+## Promlabs guide
 
-![promlabs YT](./2024/images/prom-uncommon-knowledge/promlabs-youtube.png)
+![promlabs YT](/static/img/talks/2024/promlabs-youtube.png) <!-- .element height="550px" -->
 
 ---
 

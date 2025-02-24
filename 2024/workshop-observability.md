@@ -1,11 +1,16 @@
 ---
 title: Prometheus/o11y workshop
 author: Francis Begyn
-date: \today
+date: 2024-09-24
 aspectratio: "169"
+draft: true
 ---
 
-# Who am I
+# Prometheus workshop
+
+---
+
+### Who am I
 
 Francis Begyn
 
@@ -15,7 +20,7 @@ Francis Begyn
 
 ---
 
-# Intro
+## Intro
 
 - Observability, what is it?
 - Prometheus
@@ -25,27 +30,25 @@ Francis Begyn
 
 ---
 
-# {.standout}
-
-Observability
+Observability <!-- .element class="r-fit-text" -->
 
 ---
 
-# Observability
+## Observability
 
-- Allows us to investigate problems
-- Gathers insights into the inner workings of systems/programs
-- Answers question _how?_ and _why?_
+1. Allows us to investigate problems
 
----
+1. Gathers insights into the inner workings of systems/programs
 
-# {.standout}
-
-Prometheus
+1. Answers question _how?_ and _why?_
 
 ---
 
-# Prometheus
+Prometheus <!-- .element class="r-fit-text" -->
+
+---
+
+## Prometheus
 
 - Started in 2012 at SoundCloud
 - Open Source in 2015
@@ -53,31 +56,29 @@ Prometheus
 
 ---
 
-# Prometheus docs
+## Prometheus docs
 
-![Prometheus docs](./images/workshop-observability/docs.png)
-
----
-
-# {.standout}
-
-Prometheus components
+![Prometheus docs](/static/img/talks/2024/docs.png)
 
 ---
 
-# Prometheus components
-
-![component overview](./images/workshop-observability/prometheus_overall_architecture.svg)
+Prometheus components <!-- .element class="r-fit-text" -->
 
 ---
 
-# Prometheus and it's TSDB
+## Prometheus components
 
-![promtheus tsdb](./images/workshop-observability/prometheus_focus.svg)
+![component overview](/static/img/talks/2024/prometheus_overall_architecture.svg)
 
 ---
 
-# Prometheus and it's TSDB
+## Prometheus and it's TSDB
+
+![promtheus tsdb](/static/img/talks/2024/prometheus_focus.svg)
+
+---
+
+## Prometheus and it's TSDB
 
 - Prometheus stores samples in blocks
 - blocks are a collection of series over a time
@@ -87,7 +88,7 @@ Prometheus components
 
 ---
 
-# Prometheus and it's TSDB
+## Prometheus and it's TSDB
 
 - currently incoming samples/chunks are kept in memory
   - but still as a block!
@@ -98,13 +99,11 @@ Prometheus components
 
 ---
 
-# {.standout}
-
-Service discovery
+Service discovery <!-- .element class="r-fit-text" -->
 
 ---
 
-# Service discovery
+## Service discovery
 
 - created to deal with dynamic environments
   - containers
@@ -112,7 +111,7 @@ Service discovery
 
 ---
 
-# Service discovery
+## Service discovery
 
 - created to deal with dynamic environments
   - containers
@@ -121,13 +120,13 @@ Service discovery
 
 ---
 
-# Prometheus targets and the service discovery
+## Prometheus targets and the service discovery
 
-![promtheus sd](./images/workshop-observability/prometheus_service_discovery_focus.svg)
+![promtheus sd](/static/img/talks/2024/prometheus_service_discovery_focus.svg)
 
 ---
 
-# Prometheus - puppetdb
+## Prometheus - puppetdb
 
 ```
 - job_name: node-exporter
@@ -141,7 +140,7 @@ Service discovery
 
 ---
 
-# Output of service discovery
+## Output of service discovery
 
 - the targets are fetched from the service discovery mechanism
 - the service discovery mechanism returns metadata under the form of `__meta`
@@ -162,7 +161,7 @@ Service discovery
 
 ---
 
-# Labels ... ? What are labels?
+## Labels ... ? What are labels?
 
 > Use labels to differentiate the characteristics of the thing that is being measured
 
@@ -171,13 +170,13 @@ Service discovery
 
 ---
 
-# Labels ... ? What are labels?
+## Labels ... ? What are labels?
 
-![promtheus label](./images/workshop-observability/prometheus_label_flow.svg)
+![promtheus label](/static/img/talks/2024/prometheus_label_flow.svg)
 
 ---
 
-# Relabeling
+## Relabeling
 
 - relabeling consumes original set of labels and returns a new set
   of labels
@@ -188,37 +187,37 @@ Service discovery
 
 ---
 
-# Relabeler webapp
+## Relabeler webapp
 
-![relaber qr](./images/workshop-observability/relaber-site.png)
-
----
-
-# Relabeling
-
-![promtheus relabel](./images/workshop-observability/prometheus_relabel_flow.svg)
+![relaber qr](/static/img/talks/2024/relaber-site.png)
 
 ---
 
-# Relabeling - an example
+## Relabeling
 
-![promtheus relabel](./images/workshop-observability/prometheus_relabel_1.png)
-
----
-
-# Relabeling - an example
-
-![promtheus relabel](./images/workshop-observability/prometheus_relabel_2.png)
+![promtheus relabel](/static/img/talks/2024/prometheus_relabel_flow.svg)
 
 ---
 
-# Relabeling - an example
+## Relabeling - an example
 
-![promtheus relabel](./images/workshop-observability/prometheus_relabel_3.png)
+![promtheus relabel](/static/img/talks/2024/prometheus_relabel_1.png)
 
 ---
 
-# Reserved labels
+## Relabeling - an example
+
+![promtheus relabel](/static/img/talks/2024/prometheus_relabel_2.png)
+
+---
+
+## Relabeling - an example
+
+![promtheus relabel](/static/img/talks/2024/prometheus_relabel_3.png)
+
+---
+
+## Reserved labels
 
 - allows for dynamic changes to several scrape settings
 
@@ -230,7 +229,7 @@ Service discovery
 
 ---
 
-# Excersise
+## Excersise
 
 - who can tell me what's happening here?
 
@@ -238,76 +237,72 @@ Service discovery
  - job_name: 'blackbox'
     static_configs:
       - targets:
-        - https://prometheus.io   # Target to probe with https.
+        - https://prometheus.io   ## Target to probe with https.
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 127.0.0.1:9115  # The blackbox exporter's real hostname:port.
+        replacement: 127.0.0.1:9115  ## The blackbox exporter's real hostname:port.
 ```
 
 ---
 
-# {.standout}
-
-Prometheus exporters
+Prometheus exporters <!-- .element class="r-fit-text" -->
 
 ---
 
-# Prometheus exporters
+## Prometheus exporters
 
 - 2 types of exporters
   1. exporters that expose data of it's own
 
-![promtheus exporter](./images/workshop-observability/prometheus_exporter_focus.svg)
+![promtheus exporter](/static/img/talks/2024/prometheus_exporter_focus.svg)
 
 ---
 
-# Prometheus exporters
+## Prometheus exporters
 
 - 2 types of exporters
   2. exporters that expose data they collect from other targets
 
-![promtheus exporter](./images/workshop-observability/prometheus_target_exporter_focus.svg)
+![promtheus exporter](/static/img/talks/2024/prometheus_target_exporter_focus.svg)
 
 ---
 
-# Prometheus exporters
+## Prometheus exporters
 
 - collect data
 - expose the collected data in the Prometheus format
 
 ```
-# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
-# TYPE go_gc_duration_seconds summary
+## HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+## TYPE go_gc_duration_seconds summary
 go_gc_duration_seconds{quantile="0"} 0.000138442
 go_gc_duration_seconds{quantile="0.25"} 0.00022757
 go_gc_duration_seconds_count 56699
-# HELP go_goroutines Number of goroutines that currently exist.
-# TYPE go_goroutines gauge
+## HELP go_goroutines Number of goroutines that currently exist.
+## TYPE go_goroutines gauge
 go_goroutines 14333
-# HELP go_info Information about the Go environment.
-# TYPE go_info gauge
+## HELP go_info Information about the Go environment.
+## TYPE go_info gauge
 go_info{version="go1.20.5"} 1
 ```
 
 ---
 
-# {.standout}
-
-Prometheus remote write
+Prometheus remote write <!-- .element class="r-fit-text" -->
 
 ---
 
-# Prometheus remote write
+## Prometheus remote write
 
-![promtheus exporter](./images/workshop-observability/prometheus_remote_focus.svg)
+![promtheus exporter](/static/img/talks/2024/prometheus_remote_focus.svg)
 
 ---
 
-# Prometheus remote write
+## Prometheus remote write
 
 - stores the prometheus blocks on object storage instead of locally
 - distributed systems
@@ -317,7 +312,7 @@ Prometheus remote write
 
 ---
 
-# Prometheus remote write
+## Prometheus remote write
 
 - stores the prometheus blocks on object storage instead of locally
 - distributed systems
@@ -330,13 +325,11 @@ Prometheus remote write
 
 ---
 
-# {.standout}
-
-PromQL
+PromQL <!-- .element class="r-fit-text" -->
 
 ---
 
-# PromQL
+## PromQL
 
 - prometheus query language
 - function, aggregators, selectors
@@ -346,33 +339,33 @@ PromQL
 
 ---
 
-# Querying
+## Querying
 
-![query docs](./images/workshop-observability/docs-query.png)
-
----
-
-# PromQL
-
-![promql instant query](./images/workshop-observability/series_baseline.svg)
+![query docs](/static/img/talks/2024/docs-query.png)
 
 ---
 
-# Instant query
+## PromQL
+
+![promql instant query](/static/img/talks/2024/series_baseline.svg)
+
+---
+
+## Instant query
 
 instant query `node_cpu_seconds`
 
-![promql instant query](./images/workshop-observability/series_instant_basics.svg)
+![promql instant query](/static/img/talks/2024/series_instant_basics.svg)
 
 ---
 
-# Stale data
+## Stale data
 
-![promql staleness](./images/workshop-observability/series_instant_staleness.svg)
+![promql staleness](/static/img/talks/2024/series_instant_staleness.svg)
 
 ---
 
-# Stale data
+## Stale data
 
 - series disappears from one scrape to other
 - target scrape fails
@@ -382,40 +375,38 @@ instant query `node_cpu_seconds`
 
 ---
 
-# Range query
+## Range query
 
 range query `node_cpu_seconds[10m]`
 
-![promql range query](./images/workshop-observability/series_range_query.svg)
+![promql range query](/static/img/talks/2024/series_range_query.svg)
 
 ---
 
-# PromQL offset
+## PromQL offset
 
 
 - the `offset` keyword offsets the current evaluation
 - `+` for looking back
 - `-` for looking forward
 
-![promql offset](./images/workshop-observability/series_offset.svg)
+![promql offset](/static/img/talks/2024/series_offset.svg)
 
 ---
 
-# PromQL @ modifier
+## PromQL @ modifier
 
 Enables you to select vectors at fixed times, regardless of the current step.
 
-![promql @ notation](./images/workshop-observability/series_@_notation.svg)
+![promql @ notation](/static/img/talks/2024/series_@_notation.svg)
 
 ---
 
-# {.standout}
-
-Alertmanager
+Alertmanager <!-- .element class="r-fit-text" -->
 
 ---
 
-# Alertmanager
+## Alertmanager
 
 - prometheus can generate alerts based on promql expression
 - alertmanager routes these alert based on a routing tree
@@ -426,7 +417,7 @@ Alertmanager
 
 ---
 
-# Inhibition rules
+## Inhibition rules
 
 - ruleset to prevent alerts from firing based on logic
 - for example:
@@ -435,7 +426,7 @@ Alertmanager
 
 ---
 
-# Time interval
+## Time interval
 
 defines time intervals (to make routes active/inactive)
 
@@ -451,7 +442,7 @@ time_intervals:
 
 ---
 
-# Time interval
+## Time interval
 
 ```
 - name: weekend
@@ -470,7 +461,7 @@ time_intervals:
 
 ---
 
-# Receivers
+## Receivers
 
 Configuration blocks for webhooks, pagerduty, slack, ...
 
@@ -491,45 +482,45 @@ receivers:
 
 ---
 
-# Route definition
+## Route definition
 
 ```
 [ receiver: <string> ]
-# To aggregate by all possible labels use the special value '...' as the sole label name, for example:
-# group_by: ['...']
+## To aggregate by all possible labels use the special value '...' as the sole label name, for example:
+## group_by: ['...']
 [ group_by: '[' <labelname>, ... ']' ]
 
-# Whether an alert should continue matching subsequent sibling nodes.
+## Whether an alert should continue matching subsequent sibling nodes.
 [ continue: <boolean> | default = false ]
-# A list of matchers that an alert has to fulfill to match the node.
+## A list of matchers that an alert has to fulfill to match the node.
 matchers:
   [ - <matcher> ... ]
 ```
 
 ---
 
-# Route definition
+## Route definition
 
 ```
 [ group_wait: <duration> | default = 30s ]
 [ group_interval: <duration> | default = 5m ]
 [ repeat_interval: <duration> | default = 4h ]
 
-# Times when the route should be muted.
+## Times when the route should be muted.
 mute_time_intervals:
   [ - <string> ...]
-# Times when the route should be active.
+## Times when the route should be active.
 active_time_intervals:
   [ - <string> ...]
 
-# Zero or more child routes.
+## Zero or more child routes.
 routes:
   [ - <route> ... ]
 ```
 
 ---
 
-Any questions?
+Any questions? <!-- .element class="r-fit-text" -->
 
 Francis Begyn
 
@@ -539,10 +530,8 @@ Francis Begyn
 
 https://francis.begyn.be
 
-## \olly
-
 https://o11y.eu/prometheus-support/
 
 ---
 
-![promlabs YT](./images/workshop-observability/promlabs-youtube.png)
+![promlabs YT](/static/img/talks/2024/promlabs-youtube.png)

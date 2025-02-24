@@ -1,11 +1,17 @@
 ---
 title: Golang for Sysadmins - A Practical Introduction
 author: Francis Begyn
-date: 2023/04/28
-duration: 2.5 hours
+date: 2023-04-28
+draft: true
 ---
 
-# Introduction
+# Golang for sysadmin
+
+A practical intro
+
+---
+
+## Introduction
 
 * workshop that gets you started with Go in a practical manner
 * first workshop, be gentle!
@@ -13,11 +19,20 @@ duration: 2.5 hours
   * https://francis.begyn.be/talk/intro-to-go-workshop.pdf
   * https://gitlab.inuits.io/o11y/o11y-presentations -> presentations/intro-to-go-workshop.md
 
-![image](presentations/intro-to-go-workshop.png)
+![image](/static/img/talks/2023/intro-to-go-workshop.png)
 
-------
+Notes:
+* quickly checking out how the notes worl
+Is this just after each other
 
-# Installation
+Can I have space
+
+1. and maybe listingen?
+Or even `code` blocks
+
+---
+
+## Installation
 
 * through the system packager:
   * `apt install golang`
@@ -31,9 +46,9 @@ duration: 2.5 hours
   3. Add the path to `PATH`: `export PATH=$PATH:/usr/local/go/bin`
   4. Test by running `go version`
 
-------
+---
 
-# compiling and running go programs
+## compiling and running go programs
 
 * initialze a go module `go mod init workshop`
   * Go module is a collection of packages in a file tree
@@ -42,9 +57,9 @@ duration: 2.5 hours
   * `go build -o workshop main.go`
   * `./workshop`
 
-------
+---
 
-# basics - structure
+## basics - structure
 
 ```go
 package main
@@ -56,9 +71,9 @@ func main() {
 }
 ```
 
-------
+---
 
-# basics - variables
+## basics - variables
 
 * variables can be explicitly declared `var X int`
 * but the types can also be infered from the variable `var a = "test"`
@@ -73,9 +88,9 @@ func main() {
     var e = true
 ```
 
-------
+---
 
-# basics - variables
+## basics - variables
 
 * `:=` is shorthand for declaring and initializing a variable
 
@@ -93,9 +108,9 @@ is equivalent
     d := true
 ```
 
-------
+---
 
-# basics - constants
+## basics - constants
 
 * keyword `const`
 
@@ -104,9 +119,9 @@ is equivalent
     const a = 1
 ```
 
-------
+---
 
-# basics - data types
+## basics - data types
 
 * string
 * int, int16, int32, int64
@@ -116,26 +131,36 @@ is equivalent
 * bool
 * rune (this is basically the Go equivalent of `char`)
 
-------
+---
 
-# basics - basic data structures
+## data structure: array
 
 * array:
   * `[2]string`
   * declare and initiliaze `[2]string{"hello","world"}`
   * defined by type AND size
+
+--
+
+## data structure: slice
+
 * slice:
   * `[]string`
   * defined by type
   * has `append` function
+
+--
+
+## data structure: map
+
 * map:
   * `map[string]int`
   * accessing the map `var[key]` returns the value
   * check if key exists `exist, val := map[key]`
 
-------
+---
 
-# basics - conditionals
+## basics - conditionals
 
 ```go
 if a == b {
@@ -151,9 +176,9 @@ if a == b {
 }
 ```
 
-------
+---
 
-# basics - conditionals
+## basics - conditionals
 
 ```go
 if a == b {
@@ -165,9 +190,9 @@ if a == b {
 }
 ```
 
-------
+---
 
-# basics - loops
+## basics - loops
 
 * Go only has `for` as a loop keyword
 
@@ -186,9 +211,9 @@ for ind, val := range words {
 }
 ```
 
-------
+---
 
-# basics - loops
+## basics - loops
 
 * The `for` keyword also accepts a condition (turning it into a `while`)
 
@@ -210,9 +235,9 @@ for {
 }
 ```
 
-------
+---
 
-# basics - functions
+## basics - functions
 
 ```go
 func hello(name string) string {
@@ -223,9 +248,10 @@ func main() {
     fmt.Println(hello("francis"))
 }
 ```
-------
 
-# basics - error handling
+---
+
+## basics - error handling
 
 * functions can return `error` as a data type
 
@@ -243,9 +269,9 @@ func main() {
 }
 ```
 
-------
+---
 
-# basics - error handling
+## basics - error handling
 
 ```go
 func hello(name string) (string, error) {
@@ -264,9 +290,9 @@ func main() {
 }
 ```
 
--------
+---
 
-# standard lib
+## standard lib
 
 * very extensive
 * holds almost anything you want for simple programs
@@ -280,17 +306,17 @@ import (
 )
 ```
 
--------
+---
 
-# packages and modules
+## packages and modules
 
 * get dependencies with `go get <dependency path>`
 * a module can contain multiple packages
 * tracked in `go.mod` and `go.sum` files
 
-------
+---
 
-# basics - up to you now!
+## basics - up to you now!
 
 1. Install Go
    * through the system packager:
@@ -304,9 +330,9 @@ import (
      3. Add the path to `PATH`: `export PATH=$PATH:/usr/local/go/bin`
      4. Test by running `go version`
 
-------
+---
 
-# basics - up to you now!
+## basics - up to you now!
 
 2. Write a small program that will check if the passed `name` is in an array of
    strings and greet the person when they are. If they are not, kindly inform
@@ -325,9 +351,9 @@ import (
   * https://gobyexample.com/maps
   * https://gobyexample.com/functions
 
--------
+----
 
-# basics - solution
+## basics - solution
 
 ```go
 func authenticate(name string, auth map[string]bool) error {
@@ -343,9 +369,9 @@ func authenticate(name string, auth map[string]bool) error {
 
 ```
 
--------
+----
 
-# basics - solution
+## basics - solution
 
 ```go
 func main() {
@@ -364,9 +390,9 @@ func main() {
 }
 ```
 
--------
+----
 
-# basics - solution
+## basics - solution
 
 ```go
 func main() {
@@ -386,15 +412,15 @@ func main() {
 }
 ```
 
--------
+----
 
-# Break
+## Break
 
 * 15 minutes
 
--------
+----
 
-# Go - reading/writing files
+## Go - reading/writing files
 
 * reading/writing file is spread over a selection of packages
 * helper functions to easily parse complete files or write files
@@ -409,9 +435,9 @@ import (
 )
 ```
 
--------
+----
 
-# reading/writing files
+## reading/writing files
 
 * option to just read the file into memory `os.Readfile`
 * same for writing `os.WriteFile`
@@ -424,9 +450,9 @@ import (
     err := os.WriteFile("/tmp/dat1", d1, 0644)
 ```
 
--------
+----
 
-# reading/writing files
+## reading/writing files
 
 * handle the files manually
   * `open()`
@@ -450,9 +476,9 @@ func main() {
 }
 ```
 
--------
+----
 
-# HTTP client
+## HTTP client
 
 * standard library "net/http"
 
@@ -469,9 +495,9 @@ import (
   * `.Post(url string, body io.Reader)`
   * ...
 
---------
+-----
 
-# Simple HTTP client
+## Simple HTTP client
 
 ```go
 func main() {
@@ -487,9 +513,9 @@ func main() {
 }
 ```
 
--------
+----
 
-# HTTP client
+## HTTP client
 
 * standard library "net/http"
 * standard request helper functions
@@ -500,9 +526,9 @@ func main() {
   2. Create the request: `http.NewRequest(method, ur string, body io.Reader)`
   3. Let the client execute the request: `client.Do(request)`
 
---------
+-----
 
-# Slightly more complex HTTP client
+## Slightly more complex HTTP client
 
 ```go
 func (bw *BitwardenClient) CreateItem(item Item) error {
@@ -519,24 +545,24 @@ func (bw *BitwardenClient) CreateItem(item Item) error {
     ...
 ```
 
-------
+---
 
-# HTTP server
+## HTTP server
 
 * HTTP server using `net/http` is relatively easy
 * based on the "handler" concept
 
-------
+---
 
-# HTTP server
+## HTTP server
 
 * HTTP server using `net/http` is relatively easy
 * based on the "handler" concept
 * server started with `http.ListenAndServe(":8080", nil)`
 
-------
+---
 
-# HTTP server - handlers
+## HTTP server - handlers
 
 * handlers implement the `http.Handler` interface
 * handler functions take `http.Responsewrite` & `htt.Request` arguments
@@ -544,13 +570,13 @@ func (bw *BitwardenClient) CreateItem(item Item) error {
 
 ```go
 func hello(w http.ResponseWriter, req *http.Request) {
-    fmt.Fprintf(w, "hello\n") # just send "hello" back
+    fmt.Fprintf(w, "hello\n") ## just send "hello" back
 }
 ```
 
-------
+---
 
-# HTTP server - handlers
+## HTTP server - handlers
 
 * handlers implement the `http.Handler` interface
 * handler functions take `http.Responsewrite` & `htt.Request` arguments
@@ -558,9 +584,9 @@ func hello(w http.ResponseWriter, req *http.Request) {
   * `Request` holds the request data
 
 ```go
-# This handler does something a little more sophisticated by
-# reading all the HTTP request headers and echoing them into
-# the response body.
+## This handler does something a little more sophisticated by
+## reading all the HTTP request headers and echoing them into
+## the response body.
 func headers(w http.ResponseWriter, req *http.Request) {
     for name, headers := range req.Header {
         for _, h := range headers {
@@ -570,7 +596,7 @@ func headers(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-# HTTP server - starting the server
+## HTTP server - starting the server
 
 ```go
 func main() {
@@ -580,9 +606,9 @@ func main() {
 }
 ```
 
-------
+---
 
-# HTTP excersise
+## HTTP excersise
 
 1. Create a little program that uses HTTP client to talk with you're favorite
    API! No ideas, see the API's below

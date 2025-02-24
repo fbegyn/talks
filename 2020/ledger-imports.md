@@ -1,13 +1,16 @@
 ---
 title: hledger imports for beginners
-date: 2020/10/05
+date: 2020-10-05
 author: Francis Begyn
 email: francis@begyn.be
 institute: Zeus WPI
 site: https://francis.begyn.be
+draft: false
 ---
 
 # Plain text accounting
+
+---
 
 * small recap: what is plain text accounting?
 	* plain text file
