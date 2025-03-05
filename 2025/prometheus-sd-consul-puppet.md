@@ -113,7 +113,7 @@ overrule these settings through relabeling and metadata.
 Several keys for metadata setting on the service. This is where the dynamic power
 of service discovery comes from.
 
----
+--
 
 And then at the template for consul:
 
@@ -174,13 +174,13 @@ What is visible in consul:
 
 ![overview](/static/talks/img/2025/exporter-service-consul-overview.webp)
 
----
+--
 
 What is visible in consul:
 
 ![service](/static/talks/img/2025/exporter-service-consul-service.webp)
 
----
+--
 
 What is visible in consul:
 
@@ -355,7 +355,7 @@ prometheus::service { "service_${application}_${tomcat_port}":
   tags         => ['service'],
   params       => {
     info_path              => "/${application_basepath}${http_probe}",
-    info_scrape_interal    => $probe_check_interval,
+    info_scrape_interval   => $probe_check_interval,
     info_scrape_timeout    => $probe_retry_interval,
     blackbox_info_module   => 'service-info',
     health_path            => "/${application_basepath}${healthprobe_path}",
@@ -444,12 +444,12 @@ A quick refersher of the info metadata in consul
 
 ```ruby
 info_path              => "/${application_basepath}${http_probe}",
-info_scrape_interal    => $probe_check_interval,
+info_scrape_interval   => $probe_check_interval,
 info_scrape_timeout    => $probe_retry_interval,
 blackbox_info_module   => 'service-info',
 ```
 
----
+--
 
 A second job for the info endpoint
 
