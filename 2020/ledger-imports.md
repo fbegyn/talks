@@ -57,7 +57,7 @@ draft: false
 	* `skip n`: skips the first `n` lines
 	* `fields ...`: comma separate field identifier (for classifying columns in the csv)
 	* `currency`: can be set in the file, are identified from the csv file
-	* `accountx`: account #`x` that takes part in the transaction 
+	* `accountx`: account #`x` that takes part in the transaction
 	* `amountx`: amount of funds transfered matching the `x` account
 	* `description`: description of the transaction
 	* `comment`: comment that will be added to the transaction
@@ -70,7 +70,7 @@ draft: false
 skip 1
 fields date, description, amount
 
-# specify the date field's format 
+# specify the date field's format
 # - not needed here since date is Y/M/D
 # date-format %-d/%-m/%Y
 # date-format %-m/%-d/%Y

@@ -58,7 +58,7 @@ Prometheus <!-- .element class="r-fit-text" -->
 
 ## Prometheus docs
 
-![Prometheus docs](/static/img/talks/2024/docs.png)
+![Prometheus docs](/static/talks/img/2024/docs.png)
 
 ---
 
@@ -68,13 +68,13 @@ Prometheus components <!-- .element class="r-fit-text" -->
 
 ## Prometheus components
 
-![component overview](/static/img/talks/2024/prometheus_overall_architecture.svg)
+![component overview](/static/talks/img/2024/prometheus_overall_architecture.svg)
 
 ---
 
 ## Prometheus and it's TSDB
 
-![promtheus tsdb](/static/img/talks/2024/prometheus_focus.svg)
+![promtheus tsdb](/static/talks/img/2024/prometheus_focus.svg)
 
 ---
 
@@ -122,7 +122,7 @@ Service discovery <!-- .element class="r-fit-text" -->
 
 ## Prometheus targets and the service discovery
 
-![promtheus sd](/static/img/talks/2024/prometheus_service_discovery_focus.svg)
+![promtheus sd](/static/talks/img/2024/prometheus_service_discovery_focus.svg)
 
 ---
 
@@ -172,7 +172,7 @@ Service discovery <!-- .element class="r-fit-text" -->
 
 ## Labels ... ? What are labels?
 
-![promtheus label](/static/img/talks/2024/prometheus_label_flow.svg)
+![promtheus label](/static/talks/img/2024/prometheus_label_flow.svg)
 
 ---
 
@@ -189,31 +189,31 @@ Service discovery <!-- .element class="r-fit-text" -->
 
 ## Relabeler webapp
 
-![relaber qr](/static/img/talks/2024/relaber-site.png)
+![relaber qr](/static/talks/img/2024/relaber-site.png)
 
 ---
 
 ## Relabeling
 
-![promtheus relabel](/static/img/talks/2024/prometheus_relabel_flow.svg)
+![promtheus relabel](/static/talks/img/2024/prometheus_relabel_flow.svg)
 
 ---
 
 ## Relabeling - an example
 
-![promtheus relabel](/static/img/talks/2024/prometheus_relabel_1.png)
+![promtheus relabel](/static/talks/img/2024/prometheus_relabel_1.png)
 
 ---
 
 ## Relabeling - an example
 
-![promtheus relabel](/static/img/talks/2024/prometheus_relabel_2.png)
+![promtheus relabel](/static/talks/img/2024/prometheus_relabel_2.png)
 
 ---
 
 ## Relabeling - an example
 
-![promtheus relabel](/static/img/talks/2024/prometheus_relabel_3.png)
+![promtheus relabel](/static/talks/img/2024/prometheus_relabel_3.png)
 
 ---
 
@@ -258,7 +258,7 @@ Prometheus exporters <!-- .element class="r-fit-text" -->
 - 2 types of exporters
   1. exporters that expose data of it's own
 
-![promtheus exporter](/static/img/talks/2024/prometheus_exporter_focus.svg)
+![promtheus exporter](/static/talks/img/2024/prometheus_exporter_focus.svg)
 
 ---
 
@@ -267,7 +267,7 @@ Prometheus exporters <!-- .element class="r-fit-text" -->
 - 2 types of exporters
   2. exporters that expose data they collect from other targets
 
-![promtheus exporter](/static/img/talks/2024/prometheus_target_exporter_focus.svg)
+![promtheus exporter](/static/talks/img/2024/prometheus_target_exporter_focus.svg)
 
 ---
 
@@ -298,7 +298,7 @@ Prometheus remote write <!-- .element class="r-fit-text" -->
 
 ## Prometheus remote write
 
-![promtheus exporter](/static/img/talks/2024/prometheus_remote_focus.svg)
+![promtheus exporter](/static/talks/img/2024/prometheus_remote_focus.svg)
 
 ---
 
@@ -341,13 +341,13 @@ PromQL <!-- .element class="r-fit-text" -->
 
 ## Querying
 
-![query docs](/static/img/talks/2024/docs-query.png)
+![query docs](/static/talks/img/2024/docs-query.png)
 
 ---
 
 ## PromQL
 
-![promql instant query](/static/img/talks/2024/series_baseline.svg)
+![promql instant query](/static/talks/img/2024/series_baseline.svg)
 
 ---
 
@@ -355,13 +355,13 @@ PromQL <!-- .element class="r-fit-text" -->
 
 instant query `node_cpu_seconds`
 
-![promql instant query](/static/img/talks/2024/series_instant_basics.svg)
+![promql instant query](/static/talks/img/2024/series_instant_basics.svg)
 
 ---
 
 ## Stale data
 
-![promql staleness](/static/img/talks/2024/series_instant_staleness.svg)
+![promql staleness](/static/talks/img/2024/series_instant_staleness.svg)
 
 ---
 
@@ -379,7 +379,7 @@ instant query `node_cpu_seconds`
 
 range query `node_cpu_seconds[10m]`
 
-![promql range query](/static/img/talks/2024/series_range_query.svg)
+![promql range query](/static/talks/img/2024/series_range_query.svg)
 
 ---
 
@@ -390,7 +390,7 @@ range query `node_cpu_seconds[10m]`
 - `+` for looking back
 - `-` for looking forward
 
-![promql offset](/static/img/talks/2024/series_offset.svg)
+![promql offset](/static/talks/img/2024/series_offset.svg)
 
 ---
 
@@ -398,7 +398,7 @@ range query `node_cpu_seconds[10m]`
 
 Enables you to select vectors at fixed times, regardless of the current step.
 
-![promql @ notation](/static/img/talks/2024/series_@_notation.svg)
+![promql @ notation](/static/talks/img/2024/series_@_notation.svg)
 
 ---
 
@@ -534,4 +534,4 @@ https://o11y.eu/prometheus-support/
 
 ---
 
-![promlabs YT](/static/img/talks/2024/promlabs-youtube.png)
+![promlabs YT](/static/talks/img/2024/promlabs-youtube.png)

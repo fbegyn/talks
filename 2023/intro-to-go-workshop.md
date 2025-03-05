@@ -19,7 +19,7 @@ A practical intro
   * https://francis.begyn.be/talk/intro-to-go-workshop.pdf
   * https://gitlab.inuits.io/o11y/o11y-presentations -> presentations/intro-to-go-workshop.md
 
-![image](/static/img/talks/2023/intro-to-go-workshop.png)
+![image](/static/talks/img/2023/intro-to-go-workshop.png)
 
 Notes:
 * quickly checking out how the notes worl
