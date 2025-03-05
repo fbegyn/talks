@@ -496,6 +496,14 @@ And we can do the same for other endpoints in the metadata
 
 ---
 
-## happy relabeling and service configuration!
+_happy relabeling and service configuration!_
 
-Any questions?
+Any Questions?
+
+Francis Begyn
+
+@fbegyn > Github/...
+
+@fbegyn@social.begyn.be
+
+https://francis.begyn.be
